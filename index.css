@@ -1,0 +1,426 @@
+.page{
+    display: flex;
+}
+/* TOP-BAR */
+#logo{
+    width: 100px;
+}
+
+#logo-div{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fffffffc;
+}
+
+.apps-icon{
+    display:inline-grid;
+    grid-template-columns:6px 6px;
+    grid-template-rows:6px 6px;
+    gap:3px;
+    margin-right:7px;
+    vertical-align:middle;
+}
+
+.apps-icon span{
+    width:6px;
+    height:6px;
+    border:2px solid #333;
+    box-sizing:border-box;
+}
+
+.apps-icon b{
+    width:10px;
+    height:10px;
+    font-size:15px;
+    line-height:8px;
+    font-weight:400;
+    text-align:center;
+}
+
+#top-links li{
+    list-style: none;
+    text-align:center;
+}
+
+#top-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+#top-links{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.links-div{
+    width:40%;
+    height:110px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:0.3s;
+}
+.links-div:hover{
+    background-color: #ecdfdf;
+}
+
+.links-div a {
+    position: relative;
+}
+
+.links-div a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 0, 0);
+}
+
+.icon{
+    width:50px;
+    transition: 0.3s;
+}
+
+
+/* MOVING TEXT PART */
+#img-div{
+    background: radial-gradient(circle at top left,#fcfcfc, blue);
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+#changing-text {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+#changing-text.dissolve {
+    opacity: 0;
+}
+
+#search{
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Trending games section */
+.win-div{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.win-div a{
+    text-decoration: none;
+    color: #968686;
+    justify-content: center;
+}
+
+.win-div a {
+    position: relative;
+    text-decoration: none;
+}
+
+.win-div a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 70px;
+    height: 3px;
+    background: black;
+}
+.win-div a.active {
+    color: black;
+}
+hr{
+    border: solid 0.001em;
+}
+
+.game-img{
+    width: 200px;
+    height: 180px;
+    border-radius: 20px;
+}
+
+.game-card{
+    border:solid 2px;
+    border-color: rgb(195, 209, 195);
+    border-radius: 20px;
+    width: 210px;
+    padding: 15px;
+    text-align: center;
+
+}
+
+#compuls-div{
+    cursor: pointer;
+    width: 210px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#compuls-div:hover{
+    transform: translateY(-8px);
+    filter: brightness(1.03);
+}
+
+#compuls-div .game-card{
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+#compuls-div:hover .game-card{
+    border-color: #888;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+#compuls-div .game-img{
+    transition: transform 0.4s ease;
+}
+
+#compuls-div:hover .game-img{
+    transform: scale(1.06);
+}
+
+#compuls-div h2{
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#compuls-div:hover h2{
+    color: #222;
+    transform: translateX(3px);
+    text-decoration: underline;
+}
+
+
+
+```css
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px){
+
+    nav{
+        padding: 10px 15px;
+        flex-wrap: wrap;
+    }
+
+    #logo-div{
+        width: 100%;
+        justify-content: center;
+    }
+
+    #logo{
+        width: 75px;
+    }
+
+    #logo-div h1{
+        font-size: 25px;
+    }
+
+    #top-links{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .links-div{
+        width: 25%;
+        height: 80px;
+    }
+
+    #top-links a{
+        font-size: 20px;
+    }
+
+    .icon{
+        width: 35px;
+    }
+
+    #img-div{
+        font-size: 28px;
+        padding: 35px 15px;
+        box-sizing: border-box;
+    }
+
+    #search{
+        width: 85%;
+        box-sizing: border-box;
+    }
+
+    #trending-games{
+        padding: 20px 15px;
+    }
+
+    .win-div{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #games-row{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 600px){
+
+    nav{
+        display: block;
+        padding: 10px;
+    }
+
+    #logo-div{
+        justify-content: center;
+    }
+
+    #logo{
+        width: 65px;
+    }
+
+    #logo-div h1{
+        font-size: 22px;
+    }
+
+    #top-links{
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .links-div{
+        width: 25%;
+        height: 65px;
+    }
+
+    #top-links a{
+        font-size: 15px;
+    }
+
+    .apps-icon{
+        transform: scale(0.8);
+        margin-right: 2px;
+    }
+
+    .icon{
+        width: 27px;
+    }
+
+    #img-div{
+        font-size: 21px;
+        padding: 30px 10px;
+    }
+
+    #img-div h1{
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    #search{
+        width: 95%;
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    #trending-games{
+        padding: 15px 10px;
+    }
+
+    #TG-header h2{
+        font-size: 22px;
+    }
+
+    .win-div{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .win-div a{
+        font-size: 14px;
+    }
+
+    .win-div a.active::after{
+        width: 100%;
+        height: 2px;
+    }
+
+    .game-card{
+        width: 180px;
+        padding: 10px;
+    }
+
+    .game-img{
+        width: 170px;
+        height: 150px;
+    }
+
+    #compuls-div{
+        width: 190px;
+    }
+
+    #compuls-div h2{
+        font-size: 19px;
+    }
+}
+
+
+@media (max-width: 400px){
+
+    #logo{
+        width: 55px;
+    }
+
+    #logo-div h1{
+        font-size: 19px;
+    }
+
+    .links-div{
+        height: 55px;
+    }
+
+    #top-links a{
+        font-size: 13px;
+    }
+
+    .icon{
+        width: 23px;
+    }
+
+    #img-div{
+        font-size: 18px;
+    }
+
+    #search{
+        width: 100%;
+    }
+
+    .win-div a{
+        font-size: 12px;
+    }
+
+    .game-card{
+        width: 160px;
+    }
+
+    .game-img{
+        width: 150px;
+        height: 135px;
+    }
+
+    #compuls-div{
+        width: 170px;
+    }
+}
+```

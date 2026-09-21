@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZ-MODZ</title>
+</head>
+<body>
+    <nav>
+    <div id="logo-div">
+        <img id="logo" src="/EZ-MODZ LOGO.png">
+        <h1>EZ-MODZ</h1>
+    </div>
+    <div id="heading-div">        
+        
+    </div>
+    <div id="top-links">
+     <div class="links-div">
+        <a href="#">
+    <span class="apps-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <b>+</b>
+    </span>
+    Apps
+</a>
+</div>
+
+
+<div class="links-div">
+<a href="#">
+    <span class="games-icon">🎮</span>
+    Games
+</a>
+</div>
+    <div class="links-div">
+        <img class="icon" src="/developers icon.png" alt=""><li><a href="#">Developers</a></li></div>
+    <div class="links-div">
+        <img class="icon" src="news icon.png" alt=""><li><a href="#">News</a></li></div>
+    </div>
+    </nav>
+
+    <div class="page">
+    <div id="img-div">
+        
+        <h1>The best <span id="changing-text">Games</span> <br>
+            from your place.
+        </h1>
+        <input type="text" id="search" placeholder="What would you like to find today?">
+        <br> <br>
+    </div>
+    </div>
+
+    <div id="trending-games">
+        <div id="TG-header">
+            <h2>Trending games</h2>
+        </div>
+
+        <div class="win-div">
+            <a href="" class="active">Windows</a>
+            <a href="#">Android</a>
+            <a href="#">Mac</a>
+            <a href="#">Iphone</a>
+        </div>
+        
+        <hr>
+        <div id="games-row">
+            <div id="compuls-div">
+            <div class="game-card">
+                <img class="game-img" src="blur icon.jfif" alt="">
+            </div>
+            <h2>Blur</h2>
+        </div>
+    </div>
+    
+
+<script>
+const words = ["Games", "Apps", "Mods", "Softwares", "Apks", "News"];
+const changingText = document.getElementById("changing-text");
+
+let index = 0;
+
+setInterval(() => {
+
+    // Dissolve the current word
+    changingText.classList.add("dissolve");
+
+    setTimeout(() => {
+
+        // Change the word only after it has disappeared
+        index = (index + 1) % words.length;
+        changingText.textContent = words[index];
+
+        // Make the new word appear
+        changingText.classList.remove("dissolve");
+        
+
+    }, 600);
+
+}, 2500);
+</script>
+</body>
+</html>

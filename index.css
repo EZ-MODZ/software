@@ -98,6 +98,7 @@ nav{
     font-size: 40px;
     width: 100%;
     text-align: center;
+    align-items: center;
 }
 
 #changing-text {
@@ -206,7 +207,6 @@ hr{
 
 
 
-```css
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 900px){
@@ -273,7 +273,7 @@ hr{
         justify-content: center;
         flex-wrap: wrap;
     }
-}
+
 
 
 @media (max-width: 600px){
@@ -423,4 +423,21 @@ hr{
         width: 170px;
     }
 }
-```
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+}

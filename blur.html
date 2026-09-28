@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <nav>
+    <div id="logo-div">
+        <img id="logo" src="EZ-MODZ-LOGO.png" alt="EZ-MODZ">
+        <h1>EZ-MODZ</h1>
+    </div>
+
+    <div id="top-links">
+     <div class="links-div">
+        <a href="#">
+    <span class="apps-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <b>+</b>
+    </span>
+    Apps
+</a>
+</div>
+
+<div class="links-div">
+<a href="#">
+    <span class="games-icon">🎮</span>
+    Games
+</a>
+</div>
+    <div class="links-div">
+        <img class="icon" src="developers-icon.png" alt=""><li><a href="#">Developers</a></li></div>
+    <div class="links-div">
+        <img class="icon" src="news-icon.png" alt=""><li><a href="#">News</a></li></div>
+    </div>
+    </nav>
+ <hr>
+    <div id="download-sec">
+        <div id="game-details">
+        <img class="download-img" src="blur icon.jfif" alt="">
+        <div>
+           <h1> Blur Racing Game <em>for Windows</em> </h1>
+            <div id="tiny">
+
+           <div>
+           <b>Paid</b>
+            </div>
+
+           <div>
+           &#11088;4 (33252)
+           </div>
+
+            <div>
+                5.6M<img id="download-icon" src="green-download-icon.png" alt="">
+            </div>
+            <div>
+                 Size:5.0GB Zip file
+            </div>
+           </div>
+        </div>
+        
+      
+    </div>
+      <div>
+            <a href="https://drive.google.com/file/d/1UuwWc5xFmDGza7NWaQ_tSfpwOLJZkdJI/view?usp=drive_link">
+            <button id="download-btn">
+            <h2>Free Download <img id="dwn-img" src="download-image.png" alt="">
+            </h2><b>for windows</b>
+            
+            </button>
+            </a>
+            </div>
+
+ 
+
+    </div>
+       <div>
+        <a href="index.html">
+        <button id="back-button">Back</button>
+        </a>
+    </div>
+    <div id="about">
+        <div>
+<h1>Blur (2010)</h1>
+<p>Blur is an exciting arcade racing game developed by Bizarre Creations and published by Activision. It combines realistic licensed cars with fast-paced racing and intense arcade action, creating a unique racing experience where speed and strategy are equally important.
+
+<h3>Race at High Speed</h3>
+
+Take control of more than 50 licensed cars and compete across a variety of real-world inspired locations. Race against up to 20 opponents while navigating sharp corners, jumps, shortcuts, and challenging tracks.
+
+<h3Powered-Up Racing</h3>
+
+Collect powerful abilities during races to gain an advantage over your rivals. Use speed boosts, defensive abilities and other power-ups at the right moment to overtake opponents and stay ahead.
+
+<h3>Game Modes</h3>
+
+Blur features a single-player campaign with numerous events and challenges, as well as multiplayer modes where players can compete against each other. The game supports competitive racing with up to 20 players online.
+
+<h3>Realistic Cars, Arcade Action</h3>
+
+The game combines detailed licensed vehicles with fast arcade-style gameplay. Each car has different characteristics, allowing players to choose vehicles that suit different tracks and racing styles.
+
+<h3>A Unique Racing Experience</h3>
+
+With its combination of realistic cars, fast races, power-ups, crashes, and competitive multiplayer, Blur delivers an action-packed racing experience that stands out from traditional racing games.
+
+<table border="1" cellsacing="0">
+    <tr>
+        <td>Developer :</td>
+        <td>Bizarre Creations</td>
+    </tr>
+    <tr>
+        <td>Publisher:</td>
+        <td>Activision</td>
+    </tr>
+    <tr>
+        <td>Genre:</td>
+        <td>Arcade Racing / Combat Racing</td>
+    </tr>
+    <tr>
+        <td>Original Release:</td>
+        <td>May 2010</td>
+    </tr>
+    <tr>
+        <td>Platforms:</td>
+        <td> Windows, PlayStation 3, Xbox 360</td>
+    </tr>
+    <tr>
+        <td>PC Metacritic:</td>
+        <td>81/100</td>
+    </tr>
+    <tr>
+        <td>PC User Score:</td>
+        <td>7.4/10</td>
+    </tr>
+</table>
+</p>
+</div>
+<div id="App-specs">
+<div class="screenshots">
+
+    <div class="image-wrapper">
+
+        <img id="gameScreenshot" src="blur-gameplay-1.jpg" alt="Blur gameplay">
+
+        <button class="fullscreen-btn" type="button" title="Fullscreen">⛶</button>
+
+        <button class="mobile-fullscreen-btn" type="button" title="Fullscreen">↗</button>
+
+        <div class="image-count">
+            <span id="currentImage">1</span> / 5
+        </div>
+
+    </div>
+
+    <p>
+        <button class="prev" type="button">❮</button>
+        <button class="next" type="button">❯</button>
+    </p>
+
+</div>
+    <p>
+            <b>Developer</b>
+        <br>
+        <a href="http://www.bizarrecreations.com/" target="_blank">Bizarre Creations</a>
+        │
+        <a href="https://www.activision.com/" target="_blank">Activision</a>
+        </p>
+
+        <p>
+            <details>
+                <summary><a href=""> Version 1.1</a></summary>
+                <summary><a href="">Version2.2</a></summary>
+            </details>
+        </p>
+</div>
+</div>
+
+
+
+<script>
+const images = [
+    "blur-gameplay-1.jpg",
+    "blur-gameplay-2.jpg",
+    "blur-gameplay-3.jpg",
+    "blur-gameplay-4.jpg",
+    "blur-gameplay-5.jpg"
+];
+
+let current = 0;
+
+const image = document.getElementById("gameScreenshot");
+const count = document.getElementById("currentImage");
+const nextButton = document.querySelector(".next");
+const prevButton = document.querySelector(".prev");
+
+nextButton.addEventListener("click", function () {
+    current++;
+
+    if (current >= images.length) {
+        current = 0;
+    }
+
+    image.src = images[current];
+    count.textContent = current + 1;
+});
+
+prevButton.addEventListener("click", function () {
+    current--;
+
+    if (current < 0) {
+        current = images.length - 1;
+    }
+
+    image.src = images[current];
+    count.textContent = current + 1;
+});
+
+const fullscreenButton = document.querySelector(".fullscreen-btn"); const imageWrapper = document.querySelector(".image-wrapper"); fullscreenButton.addEventListener("click", function () { if (!document.fullscreenElement) { imageWrapper.requestFullscreen(); } else { document.exitFullscreen(); } });
+
+document.addEventListener("keydown", function (event) {
+
+    if (event.key === "ArrowRight") {
+        nextButton.click();
+    }
+
+    if (event.key === "ArrowLeft") {
+        prevButton.click();
+    }
+
+});
+
+</script>
+</body>
+</html>

@@ -18,6 +18,7 @@ nav{
     display: flex;
     justify-content: space-between;
     background-color: #fffffffc;
+    box-shadow: 0px 9px 20px black;
 }
 
 .apps-icon{
@@ -171,8 +172,14 @@ hr{
 
 #compuls-div{
     cursor: pointer;
-    width: 210px;
+    width: 246px;
+    border-radius: 10px;
     transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#compuls-div a{
+    text-decoration: none;
+    color: black;
 }
 
 #compuls-div:hover{
@@ -207,240 +214,475 @@ hr{
     transform: translateX(3px);
     text-decoration: underline;
 }
+/* ============================= */
+/* BLUR DOWNLOAD SECTION ONWARDS */
+/* ============================= */
 
-
-
-/* RESPONSIVE DESIGN */
-
-@media (max-width: 900px){
-
-    nav{
-        padding: 10px 15px;
-        flex-wrap: wrap;
-    }
-
-    #logo-div{
-        width: 100%;
-        justify-content: center;
-    }
-
-    #logo{
-        width: 75px;
-    }
-
-    #logo-div h1{
-        font-size: 25px;
-    }
-
-    #top-links{
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .links-div{
-        width: 25%;
-        height: 80px;
-    }
-
-    #top-links a{
-        font-size: 20px;
-    }
-
-    .icon{
-        width: 35px;
-    }
-
-    #img-div{
-        font-size: 28px;
-        padding: 35px 15px;
-        box-sizing: border-box;
-    }
-
-    #search{
-        width: 85%;
-        box-sizing: border-box;
-    }
-
-    #trending-games{
-        padding: 20px 15px;
-    }
-
-    .win-div{
-        width: 100%;
-        max-width: 400px;
-    }
-
-    #games-row{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-
-
-@media (max-width: 600px){
-
-    nav{
-        display: block;
-        padding: 10px;
-    }
-
-    #logo-div{
-        justify-content: center;
-    }
-
-    #logo{
-        width: 65px;
-    }
-
-    #logo-div h1{
-        font-size: 22px;
-    }
-
-    #top-links{
-        width: 100%;
-        margin-top: 5px;
-    }
-
-    .links-div{
-        width: 25%;
-        height: 65px;
-    }
-
-    #top-links a{
-        font-size: 15px;
-    }
-
-    .apps-icon{
-        transform: scale(0.8);
-        margin-right: 2px;
-    }
-
-    .icon{
-        width: 27px;
-    }
-
-    #img-div{
-        font-size: 21px;
-        padding: 30px 10px;
-    }
-
-    #img-div h1{
-        margin-top: 10px;
-        margin-bottom: 25px;
-    }
-
-    #search{
-        width: 95%;
-        padding: 14px;
-        font-size: 14px;
-    }
-
-    #trending-games{
-        padding: 15px 10px;
-    }
-
-    #TG-header h2{
-        font-size: 22px;
-    }
-
-    .win-div{
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    .win-div a{
-        font-size: 14px;
-    }
-
-    .win-div a.active::after{
-        width: 100%;
-        height: 2px;
-    }
-
-    .game-card{
-        width: 180px;
-        padding: 10px;
-    }
-
-    .game-img{
-        width: 170px;
-        height: 150px;
-    }
-
-    #compuls-div{
-        width: 190px;
-    }
-
-    #compuls-div h2{
-        font-size: 19px;
-    }
-}
-
-
-@media (max-width: 400px){
-
-    #logo{
-        width: 55px;
-    }
-
-    #logo-div h1{
-        font-size: 19px;
-    }
-
-    .links-div{
-        height: 55px;
-    }
-
-    #top-links a{
-        font-size: 13px;
-    }
-
-    .icon{
-        width: 23px;
-    }
-
-    #img-div{
-        font-size: 18px;
-    }
-
-    #search{
-        width: 100%;
-    }
-
-    .win-div a{
-        font-size: 12px;
-    }
-
-    .game-card{
-        width: 160px;
-    }
-
-    .game-img{
-        width: 150px;
-        height: 135px;
-    }
-
-    #compuls-div{
-        width: 170px;
-    }
-}
-html,
-body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-* {
+#download-sec {
+    width: 90%;
+    max-width: 1200px;
+    margin: 45px auto 30px auto;
+    padding: 28px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
 }
 
-img,
-video {
-    max-width: 100%;
-    height: auto;
+#game-details {
+    display: flex;
+    align-items: center;
 }
 
+.download-img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-right: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#game-details h1 {
+    font-size: 27px;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+#game-details h1 em {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #777;
+}
+
+#tiny {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#tiny div {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+#tiny b {
+    color: #222;
+}
+
+#download-icon {
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+/* DOWNLOAD BUTTON */
+
+#download-sec > div:last-child {
+    display: flex;
+    align-items: center;
+}
+
+#download-btn {
+    min-width: 220px;
+    padding: 17px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #111;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+#download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#download-btn h2 {
+    margin: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#download-btn b {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.75;
+}
+
+#dwn-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-left: 8px;
+}
+
+
+/* BACK BUTTON */
+
+#back-button {
+    margin: 5px 0 35px 5%;
+    padding: 9px 20px;
+    background: white;
+    color: #111;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#back-button:hover {
+    background: #111;
+    color: white;
+}
+
+/* =========================
+   BLUR GAME INFORMATION
+   ========================= */
+
+#about {
+    width: 90%;
+    max-width: 1150px;
+    margin: 45px auto;
+    padding: 35px 45px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Blur (2010) */
+
+#about h1 {
+    margin: 0 0 25px 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+}
+
+
+/* Text */
+
+#about p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
+
+/* Section headings */
+
+#about h3 {
+    margin: 28px 0 10px 0;
+    font-size: 21px;
+    color: #111;
+}
+
+
+/* =========================
+   APP SPECS
+   ========================= */
+
+#App-specs {
+    width: 90%;
+    max-width: 1150px;
+    margin: 45px auto 70px auto;
+    padding: 35px 45px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Screenshot area */
+
+.screenshots {
+    width: 100%;
+    position: relative;
+}
+
+
+/* Image wrapper */
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 560px;
+
+    overflow: hidden;
+    background: #111;
+    border-radius: 12px;
+}
+
+
+/* Main screenshot */
+
+#gameScreenshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================
+   SCREENSHOT ARROWS
+   ========================= */
+
+.prev,
+.next {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition: 0.2s;
+}
+
+.prev {
+    left: 18px;
+}
+
+.next {
+    right: 18px;
+}
+
+.prev:hover,
+.next:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateY(-50%) scale(1.08);
+}
+
+
+/* =========================
+   IMAGE COUNTER
+   ========================= */
+
+.image-count {
+    position: absolute;
+
+    left: 15px;
+    bottom: 15px;
+
+    padding: 7px 11px;
+
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    z-index: 5;
+}
+
+
+/* =========================
+   FULLSCREEN BUTTON
+   ========================= */
+
+.fullscreen-btn,
+.mobile-fullscreen-btn {
+    position: absolute;
+
+    right: 15px;
+    bottom: 15px;
+
+    padding: 9px 13px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+.mobile-fullscreen-btn {
+    display: none;
+}
+
+
+/* Actual fullscreen */
+
+.image-wrapper:fullscreen {
+    width: 100vw;
+    height: 100vh;
+
+    background: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0;
+}
+
+.image-wrapper:fullscreen #gameScreenshot {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* =========================
+   DEVELOPER / VERSION AREA
+   ========================= */
+
+#App-specs p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
+#App-specs a {
+    color: #111;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#App-specs a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   LAPTOP RESPONSIVE
+   ========================= */
+
+@media (max-width: 1000px) {
+
+    #about,
+    #App-specs {
+        width: 92%;
+        padding: 30px 35px;
+    }
+
+    #about h1 {
+        font-size: 28px;
+    }
+
+    .image-wrapper {
+        height: 480px;
+    }
+}
+
+
+/* SMALL LAPTOP */
+
+@media (max-width: 800px) {
+
+    #about,
+    #App-specs {
+        width: 94%;
+        padding: 25px;
+    }
+
+    #about h1 {
+        font-size: 25px;
+    }
+
+    #about h3 {
+        font-size: 19px;
+    }
+
+    #about p,
+    #App-specs p {
+        font-size: 15px;
+    }
+
+    .image-wrapper {
+        height: 400px;
+    }
+}
+
+
+/* PHONE */
+
+@media (max-width: 600px) {
+
+    #about,
+    #App-specs {
+        width: 94%;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    #about h1 {
+        font-size: 23px;
+    }
+
+    #about h3 {
+        font-size: 18px;
+    }
+
+    #about p,
+    #App-specs p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .image-wrapper {
+        height: 250px;
+    }
+
+    .prev,
+    .next {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .fullscreen-btn {
+        display: none;
+    }
+
+    .mobile-fullscreen-btn {
+        display: block;
+    }
 }

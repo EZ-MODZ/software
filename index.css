@@ -70,6 +70,7 @@ nav{
     justify-content:center;
     align-items:center;
     transition:0.3s;
+    cursor: pointer;
 }
 .links-div:hover{
     background-color: #ecdfdf;
@@ -168,6 +169,11 @@ hr{
     padding: 15px;
     text-align: center;
 
+}
+
+#games-row{
+    display: flex;
+justify-content: space-between;
 }
 
 #compuls-div{
@@ -573,7 +579,6 @@ hr{
 }
 
 #App-specs a {
-    color: #111;
     font-weight: 600;
     text-decoration: none;
 }
@@ -637,6 +642,51 @@ hr{
 /* PHONE */
 
 @media (max-width: 600px) {
+    nav{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #top-links a{
+            font-size: 20px ;
+            text-align: center;
+            display: flex;
+        }
+
+        #top-links{
+            width: 100%;
+        }
+
+        #top-links img{
+            width: 30px;
+        }
+
+
+        .game-img{
+           width: 150px;
+           height: 180px;
+           border-radius: 20px;
+        }
+
+        #games-row{
+            display: flex;
+            flex-direction: column;
+        }
+.game-card{
+    border:solid 2px;
+    border-color: rgb(195, 209, 195);
+    border-radius: 20px;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+
+}
+    #game-details{
+        display: flex;
+        flex-direction: column;
+    }
 
     #about,
     #App-specs {
@@ -659,6 +709,8 @@ hr{
         line-height: 1.6;
     }
 
+
+    
     .image-wrapper {
         height: 250px;
     }
@@ -686,3 +738,29 @@ hr{
         display: block;
     }
 }
+
+/* TABLET */
+@media (max-width: 800px) {
+    nav{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #top-links a{
+            font-size: 30px ;
+            text-align: center;
+            display: flex;
+        }
+
+        #top-links{
+            width: 100%;
+        }
+
+        #top-links img{
+            width: 30px;
+        }
+
+}
+
